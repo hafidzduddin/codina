@@ -73,7 +73,7 @@ return q->elevator->elevator_data;
 static void
 vr_add_rq_rb(struct vr_data *vd, struct request *rq)
 {
-struct request;
+
 elv_rb_add(&vd->sort_list, rq);
 
 if (blk_rq_pos(rq) >= vd->last_sector) {
