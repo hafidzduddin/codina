@@ -85,7 +85,11 @@ static inline bool compaction_deferred(struct zone *zone)
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 static inline int compact_nodes(bool sync)
+=======
+static inline int compact_nodes()
+>>>>>>> parent of cb4aa75... lowmemorykiller: Use asynchronous compaction - from cyanogen
 {
     return COMPACT_CONTINUE;
 }

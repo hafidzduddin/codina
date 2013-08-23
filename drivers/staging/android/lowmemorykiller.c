@@ -158,9 +158,13 @@ static int lowmem_shrink(struct shrinker *s, struct shrink_control *sc)
 	rcu_read_unlock();
 <<<<<<< HEAD
     if (selected)
+<<<<<<< HEAD
         compact_nodes(false);
 =======
 >>>>>>> parent of 3195558... owmemorykiller.c: original patch from cyanogen. According to
+=======
+        compact_nodes();
+>>>>>>> parent of cb4aa75... lowmemorykiller: Use asynchronous compaction - from cyanogen
 	return rem;
 }
 
