@@ -716,7 +716,11 @@ static int compact_node(int nid, bool sync)
 }
 
 /* Compact all nodes in the system */
+<<<<<<< HEAD
 int compact_nodes(bool sync)
+=======
+static int compact_nodes(void)
+>>>>>>> parent of 3195558... owmemorykiller.c: original patch from cyanogen. According to
 {
 	int nid;
 
