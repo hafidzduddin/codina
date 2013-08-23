@@ -715,15 +715,7 @@ static int compact_node(int nid)
 }
 
 /* Compact all nodes in the system */
-<<<<<<< HEAD
-<<<<<<< HEAD
-int compact_nodes(bool sync)
-=======
-static int compact_nodes(void)
->>>>>>> parent of 3195558... owmemorykiller.c: original patch from cyanogen. According to
-=======
 int compact_nodes(void)
->>>>>>> parent of cb4aa75... lowmemorykiller: Use asynchronous compaction - from cyanogen
 {
 	int nid;
 

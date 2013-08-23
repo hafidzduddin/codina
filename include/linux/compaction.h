@@ -84,18 +84,6 @@ static inline bool compaction_deferred(struct zone *zone)
 	return 1;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-static inline int compact_nodes(bool sync)
-=======
-static inline int compact_nodes()
->>>>>>> parent of cb4aa75... lowmemorykiller: Use asynchronous compaction - from cyanogen
-{
-    return COMPACT_CONTINUE;
-}
-
-=======
->>>>>>> parent of 3195558... owmemorykiller.c: original patch from cyanogen. According to
 #endif /* CONFIG_COMPACTION */
 
 #if defined(CONFIG_COMPACTION) && defined(CONFIG_SYSFS) && defined(CONFIG_NUMA)
