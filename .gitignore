@@ -35,7 +35,6 @@ vmlinux
 */kernel/vmlinux
 piggy.gz
 piggy.lzo
-lib1funcs.S
 */myfile
 
 #
