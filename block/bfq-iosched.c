@@ -466,8 +466,6 @@ static void bfq_add_rq_rb(struct request *rq)
 	bfqq->queued[rq_is_sync(rq)]++;
 	bfqd->queued++;
 
-	spin_lock(&bfqd->eqm_lock);
-
 	elv_rb_add(&bfqq->sort_list, rq);
 
 	/*
