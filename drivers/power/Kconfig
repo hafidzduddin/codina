@@ -318,4 +318,11 @@ config PM2XXX_DEEP_DEBUG
 	  It allows to read or write directly a register.
 	  Say Y to include support for Deep Debug.
 	  If unsure, say N.
+
+config LPM_CM
+	bool "lpm cyanogenmod"
+	depends on MACH_CODINA_EURO
+	default n
+	help
+	  Say Y to include support for power off charging in cyanogenmod unofficial.
 endif # POWER_SUPPLY
