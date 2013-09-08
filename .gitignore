@@ -29,6 +29,7 @@ modules.builtin
 *.bz2
 *.lzma
 *.lzo
+*.lz4
 *.patch
 *.gcno
 vmlinux
