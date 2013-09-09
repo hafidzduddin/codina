@@ -351,7 +351,7 @@ CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
 CFLAGS_MODULE   =
 AFLAGS_MODULE   =
 LDFLAGS_MODULE  =
-CFLAGS_KERNEL	= -D__linux__ -pipe
+CFLAGS_KERNEL	= -D__linux__
 AFLAGS_KERNEL	=
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage
 
@@ -374,11 +374,7 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -mtune=cortex-a9 \
 		   -march=armv7-a \
 		   -mfpu=neon \
-		   -ftree-vectorize \
-		   -funswitch-loops -fpredictive-commoning -fgcse-after-reload \
-		   -pipe -marm -mfloat-abi=softfp \
-		   -fmodulo-sched -fmodulo-sched-allow-regmoves \
-		   -mno-unaligned-access
+		   -ftree-vectorize
 
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
