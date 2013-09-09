@@ -53,24 +53,10 @@ void __init ux500_init_devices(void)
 #endif
 }
 
-#ifdef CONFIG_SAMSUNG_KERNEL_DEBUG
-extern unsigned int unhandled_reset_count ;
-#endif /*CONFIG_SAMSUNG_KERNEL_DEBUG*/
 void ux500_restart(char mode, const char *cmd)
 {
 	unsigned short reset_code;
-	int i ;
 	printk("ux500_restart: Call arch_reset(), mode: %c, cmd: %s\n", mode, cmd );
-
-#ifdef CONFIG_SAMSUNG_KERNEL_DEBUG
-        if( 'L' == mode || 'U' == mode || 'K' == mode)
-        {
-        	for( i = 0 ; i < 100 ; i++ ) {
-        		arch_reset( mode, NULL ) ;
-        		unhandled_reset_count++ ;
-                }
-        }
-#endif /*CONFIG_SAMSUNG_KERNEL_DEBUG*/
 
         arch_reset( mode, cmd ) ;
 
