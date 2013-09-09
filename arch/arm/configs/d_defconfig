@@ -1,6 +1,6 @@
 #
 # Automatically generated make config: don't edit
-# Linux/arm 3.0.31 Kernel Configuration
+# Linux/arm 3.0.41 Kernel Configuration
 #
 CONFIG_ARM=y
 CONFIG_HAVE_PWM=y
@@ -1590,7 +1590,6 @@ CONFIG_SAMSUNG_CHARGER_SPEC=y
 # CONFIG_AB8500_BM is not set
 CONFIG_ABB_BM=y
 # CONFIG_MEASURE_TEMP_BY_ADC_TABLE is not set
-# CONFIG_LPM_CM is not set
 CONFIG_HWMON=y
 # CONFIG_HWMON_VID is not set
 # CONFIG_HWMON_DEBUG_CHIP is not set
@@ -2892,6 +2891,7 @@ CONFIG_CRYPTO_MD5=y
 # CONFIG_CRYPTO_RMD256 is not set
 # CONFIG_CRYPTO_RMD320 is not set
 CONFIG_CRYPTO_SHA1=y
+CONFIG_CRYPTO_SHA1_ARM=y
 CONFIG_CRYPTO_SHA256=y
 # CONFIG_CRYPTO_SHA512 is not set
 # CONFIG_CRYPTO_TGR192 is not set
@@ -2901,6 +2901,7 @@ CONFIG_CRYPTO_SHA256=y
 # Ciphers
 #
 CONFIG_CRYPTO_AES=y
+CONFIG_CRYPTO_AES_ARM=y
 # CONFIG_CRYPTO_ANUBIS is not set
 CONFIG_CRYPTO_ARC4=y
 # CONFIG_CRYPTO_BLOWFISH is not set
